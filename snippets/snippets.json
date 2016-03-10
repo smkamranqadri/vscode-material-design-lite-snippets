@@ -1,0 +1,94 @@
+{
+    "MDL HTML": {
+        "prefix": "mdl-html",
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"description\" content=\"A front-end template that helps you build fast, modern mobile web apps.\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>${1:Material Design Lite}</title>\n    <link rel=\"stylesheet\" href=\"https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css\">\n    <script src=\"https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js\"></script>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n  </head>\n  <body>\n    <div class=\"mdl-layout mdl-js-layout\">\n      <header class=\"mdl-layout__header mdl-layout__header--scroll\">\n        <div class=\"mdl-layout__header-row\">\n          <span class=\"mdl-layout-title\">$2</span>\n          <div class=\"mdl-layout-spacer\"></div>\n          <nav class=\"mdl-navigation\">\n            ${3:<!-- Add MDL Navigation Links here -->}\n          </nav>\n        </div>\n      </header>\n      <div class=\"mdl-layout__drawer\">\n        <span class=\"mdl-layout-title\">$4</span>\n        <nav class=\"mdl-navigation\">\n          ${5:<!-- Add MDL Navigation Links here -->}\n        </nav>\n      </div>\n      <main class=\"mdl-layout__content\">\n        $6\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    "MDL Navigation Link": {
+        "prefix": "mdl-nav-link",
+        "body": "<a class=\"mdl-navigation__link\" href=\"$1\">$2</a>"
+    },
+    "MDL Grid": {
+        "prefix": "mdl-grid",
+        "body": "<div class=\"mdl-grid\">\n  $1\n</div>"
+    },
+    "MDL Cell": {
+        "prefix": "mdl-cell",
+        "body": "<div class=\"mdl-cell mdl-cell--$1-col\">\n  $2\n</div>"
+    },
+    "MDL Badge Icon": {
+        "prefix": "mdl-badge-icon",
+        "body": "<div class=\"material-icons mdl-badge mdl-badge--overlap\" data-badge=\"$1\">$2</div>"
+    },
+    "MDL Badge Text": {
+        "prefix": "mdl-badge-text",
+        "body": "<span class=\"mdl-badge\" data-badge=\"$1\">$2</span>"
+    },
+    "MDL Button": {
+        "prefix": "mdl-button",
+        "body": "<button class=\"mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary\">$1</button>"
+    },
+    "MDL Button Round": {
+        "prefix": "mdl-button-round",
+        "body": "<button class=\"mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored\">$1</button>"
+    },
+    "MDL Button Icon": {
+        "prefix": "mdl-button-icon",
+        "body": "<button class=\"mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon\">$1</button>"
+    },
+    "MDL Card": {
+        "prefix": "mdl-card",
+        "body": "<div class=\"mdl-card mdl-shadow--2dp\">\n  <div class=\"mdl-card__title\">\n    <h2 class=\"mdl-card__title-text\">$1</h2>\n  </div>\n  <div class=\"mdl-card__supporting-text\">\n    $2\n  </div>\n  <div class=\"mdl-card__actions mdl-card--border\">\n    <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">\n      $3\n    </a>\n  </div>\n  <div class=\"mdl-card__menu\">\n    <button class=\"mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect\">\n      <i class=\"material-icons\">share</i>\n    </button>\n    $4\n  </div>\n</div>"
+    },
+    "MDL Card Mini": {
+        "prefix": "mdl-card-mini",
+        "body": "<div class=\"mdl-card mdl-shadow--2dp\">\n  <div class=\"mdl-card__title mdl-card--expand\">\n    $1\n  </div>\n  <div class=\"mdl-card__actions mdl-card--border\">\n    <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">\n      $2\n    </a>\n    <div class=\"mdl-layout-spacer\"></div>\n    <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">\n      $3\n    </a>\n  </div>\n</div>"
+    },
+    "MDl List": {
+        "prefix": "mdl-list",
+        "body": "<ul class=\"mdl-list\">\n  <li class=\"mdl-list__item\">\n    <span class=\"mdl-list__item-primary-content\">\n      $1\n    </span>\n  </li>\n</ul>"
+    },
+    "MDL Progress Bar": {
+        "prefix": "mdl-progress",
+        "body": "<div id=\"p1\" class=\"mdl-progress mdl-js-progress\"></div>"
+    },
+    "MDL Spinner": {
+        "prefix": "mdl-spin",
+        "body": "<div class=\"mdl-spinner mdl-js-spinner is-active\"></div>"
+    },
+    "MDL Menu": {
+        "prefix": "mdl-menu",
+        "body": "<button id=\"demo-menu-top-left\" class=\"mdl-button mdl-js-button mdl-button--icon\">\n  <i class=\"material-icons\">more_vert</i>\n</button>\n<ul class=\"mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect\" for=\"demo-menu-top-left\">\n  ${1:<!-- Add MDL Menu Items here -->}\n</ul>"
+    },
+    "MDL Menu Item": {
+        "prefix": "mdl-menu-item",
+        "body": "<li class=\"mdl-menu__item\">$1</li>"
+    },
+    "MDL Slider": {
+        "prefix": "mdl-slider",
+        "body": "<input class=\"mdl-slider mdl-js-slider\" type=\"range\" min=\"0\" max=\"100\" value=\"0\" tabindex=\"0\">"
+    },
+    "MDL Checkbox": {
+        "prefix": "mdl-check",
+        "body": "<label class=\"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect\" for=\"checkbox-1\">\n  <input type=\"checkbox\" id=\"checkbox-1\" class=\"mdl-checkbox__input\" checked>\n  <span class=\"mdl-checkbox__label\">$1</span>\n</label>"
+    },
+    "MDL Radio Button": {
+        "prefix": "mdl-radio",
+        "body": "<label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"option-1\">\n  <input type=\"radio\" id=\"option-1\" class=\"mdl-radio__button\" name=\"options\" value=\"1\" checked>\n  <span class=\"mdl-radio__label\">$1</span>\n</label>"
+    },
+    "MDL Switch": {
+        "prefix": "mdl-switch",
+        "body": "<label class=\"mdl-switch mdl-js-switch mdl-js-ripple-effect\" for=\"switch-1\">\n  <input type=\"checkbox\" id=\"switch-1\" class=\"mdl-switch__input\" checked>\n  <span class=\"mdl-switch__label\"></span>\n</label>"
+    },
+    "MDL Table": {
+        "prefix": "mdl-table",
+        "body": "<table class=\"mdl-data-table mdl-js-data-table mdl-shadow--2dp\">\n  $1\n</table>"
+    },
+    "MDL Text Field": {
+        "prefix": "mdl-text",
+        "body": "<form action=\"#\">\n  <div class=\"mdl-textfield mdl-js-textfield\">\n    <input class=\"mdl-textfield__input\" type=\"text\" id=\"sample1\">\n    <label class=\"mdl-textfield__label\" for=\"sample1\">$1</label>\n  </div>\n</form>"
+    },
+    "MDL Tooltip": {
+        "prefix": "mdl-tooltip",
+        "body": "<span class=\"mdl-tooltip\" for=\"$1\">$2</span>"
+    }
+}

@@ -1,0 +1,21 @@
+{
+	"name": "vscode-material-design-lite-snippets",
+	"displayName": "Material Design Lite Snippets",
+	"description": "Snippets for VSCode of Material Design Lite",
+	"version": "0.0.1",
+	"publisher": "smkamranqadri",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}
